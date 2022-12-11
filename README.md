@@ -6,7 +6,7 @@
 ```
 
 ## Collaborators
-[khy0425](https://github.com/khy0425)
+[khy0425](https://github.com/khy0425)  
 [cookieCornSoup](https://github.com/cookieCornSoup)
 
 개발영역|기능|담당자
@@ -17,3 +17,8 @@
 검색, 검색 후|검색, 검색 후 리스트|khy0425|
 카테고리|장르 카테고리|khy0425|
 상세페이지|게임 상세페이지|cookieCornSoup|
+
+  
+공부할 라이브러리|정리|github
+---|--|---|
+Glide|이미지 로딩 라이브러리|https://github.com/bumptech/glide
