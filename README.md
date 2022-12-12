@@ -9,6 +9,7 @@
 [khy0425](https://github.com/khy0425)  
 [cookieCornSoup](https://github.com/cookieCornSoup)
 
+## Functional Specification
 개발영역|기능|담당자
 ---|--|---|
 로그인, 회원가입|자동로그인, 데이터 불러오기|khy0425|
@@ -18,7 +19,7 @@
 카테고리|장르 카테고리|khy0425|
 상세페이지|게임 상세페이지|cookieCornSoup|
 
-  
+## Library Specification
 공부할 라이브러리|정리|github
 ---|--|---|
 Glide|이미지 로딩 라이브러리|https://github.com/bumptech/glide
