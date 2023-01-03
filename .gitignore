@@ -2,6 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,android,androidstudio,kotlin,java,gradle
 
 ### Android ###
+# Gradle files
+.gradle/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
