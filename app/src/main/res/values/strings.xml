@@ -16,4 +16,13 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <!-- profile -->
+    <string name="nikename">닉네임</string>
+    <string name="edit_profile">프로필 편집</string>
+    <string name="pick_game">찜한 게임</string>
+    <string name="notice">공지사항</string>
+    <string name="service_center">고객센터</string>
+    <string name="setting">설정</string>
 </resources>

@@ -10,7 +10,7 @@ import com.example.gamehunter.viewmodel.MyPageViewModel
 class MyPageActivity : BaseActivity<ActivityMypageBinding, MyPageViewModel>(){
 
     // 레이아웃 연결
-    override val layoutResID: Int = R.layout.activity_mypage
+    override val layoutId: Int = R.layout.activity_mypage
 
     // 의존성 주입
     override val viewModel: MyPageViewModel = MyPageViewModel by viewModel()
@@ -18,7 +18,7 @@ class MyPageActivity : BaseActivity<ActivityMypageBinding, MyPageViewModel>(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
+        viewDataBinding.mypageImageview
 
     }
 
