@@ -22,6 +22,10 @@ android {
         viewBinding true
     }
 
+    dataBinding {
+        enabled = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -53,7 +57,15 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.10.0'
     implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
+    implementation 'androidx.preference:preference:1.1.+'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    //rx
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.6'
+    implementation 'io.reactivex.rxjava3:rxkotlin:3.0.0'
+
+    implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
