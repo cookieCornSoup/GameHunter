@@ -23,12 +23,3 @@
 공부할 라이브러리|정리|github
 ---|--|---|
 Glide|이미지 로딩 라이브러리|https://github.com/bumptech/glide
-
-## 메모
-날짜|정리|
----|--|
-2022.12.12|github 브랜치 추가 논의, mvvm으로 개발 결정
-
-## FireBase
-날짜|정리|
-2023-01-02|설치법 상단의 Tools - Firebase - Realtime Database - Get started with Realtime Database [KOTLIN] 
