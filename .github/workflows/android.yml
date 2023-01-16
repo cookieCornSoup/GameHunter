@@ -26,7 +26,7 @@ jobs:
       env:
         GOOGLE_SERVICE_JSON: ${{secrets.GOOGLE_SERVICE_JSON}}
       run: |
-        touch ./app/google-service.json
-        echo $GOOGLE_SERVICE_JSON > ./app/google-service.json
+        touch ./app/google-services.json
+        echo $GOOGLE_SERVICE_JSON > ./app/google-services.json
     - name: Build with Gradle
       run: ./gradlew build
