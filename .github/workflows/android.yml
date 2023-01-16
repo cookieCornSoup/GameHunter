@@ -25,6 +25,6 @@ jobs:
     - name: Create Google Service Json
       run: |
         touch ./app/google-service.json
-        echo ${{secrets.GOOGLE_SERVICE_JSON}} > ./app/google-service.json
+        echo ${{secrets.GOOGLE_SERVICE_JSON}} | base64 -di > ./app/google-service.json
     - name: Build with Gradle
       run: ./gradlew build
