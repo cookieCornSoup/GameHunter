@@ -22,9 +22,9 @@ jobs:
 
       - name: Grant execute permission for gradlew
           run: chmod +x gradlew
-                 - name: Create Google Service Json
-                 run: |
-                   touch ./app/google-services.json
-                   echo ${{secrets.GOOGLE_SERVICE_JSON}} > ./app/google-services.json
-                 - name: Build with Gradle
-                   run: ./gradlew build
+      - name: Create Google Service Json
+          run: |
+            touch ./app/google-services.json
+            echo ${{secrets.GOOGLE_SERVICE_JSON}} > ./app/google-services.json
+      - name: Build with Gradle
+          run: ./gradlew build
