@@ -25,4 +25,7 @@
     <string name="notice">공지사항</string>
     <string name="service_center">고객센터</string>
     <string name="setting">설정</string>
+    <string name="logout">로그아웃</string>
+    <string name="pick_picture">사진 설정</string>
+
 </resources>
