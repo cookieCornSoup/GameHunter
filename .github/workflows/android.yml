@@ -24,7 +24,7 @@ jobs:
       run: chmod +x gradlew
     - name: Create Google Service Json
       run: |
-        cat ./app/google-service.json
+        cat > ./app/google-service.json
         echo ${{secrets.GOOGLE_SERVICE_JSON}} > ./app/google-service.json
     - name: Build with Gradle
       run: ./gradlew build
