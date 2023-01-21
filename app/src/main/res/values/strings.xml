@@ -25,4 +25,11 @@
     <string name="notice">공지사항</string>
     <string name="service_center">고객센터</string>
     <string name="setting">설정</string>
+    <string name="password">Password</string>
+
+    <!-- singUp -->
+    <string name="email">이메일</string>
+    <string name="textPassword">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="signUp">회원가입</string>
 </resources>
