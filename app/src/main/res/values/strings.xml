@@ -13,7 +13,8 @@
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
     <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 
@@ -24,7 +25,6 @@
     <string name="notice">공지사항</string>
     <string name="service_center">고객센터</string>
     <string name="setting">설정</string>
-    <string name="password">Password</string>
 
     <!-- singUp -->
     <string name="email">이메일 주소를 입력해 주세요</string>
@@ -38,6 +38,11 @@
     <string name="signUpToast">해당 이메일은 등록되지 않았어요! 회원가입 페이지로 이동할게요 !!</string>
     <string name="login_succesText">로그인에 성공했어요, 환영합니다!</string>
     <string name="login_failText">비밀번호를 확인해주세요!</string>
+    <string name="signUp_successText">회원가입에 성공했어요, 환영합니다!</string>
+    <string name="signUp_failTextReason">회원가입을 실패했어요 ㅠㅠ</string>
+    <string name="signUp_failTextPasswordConfirm">비밀번호 확인과 일치하지 않아요 재확인해주세요!</string>
+    <stirng name="signUp_failTextEmailEmpty">이메일칸이 비었어요!</stirng>
+    <string name="signUp_failTextPassWordEmpty">비밀번호칸이 비어있어요!</string>
 
     <!-- SharedPreference -->
     <string name="preference_file_key">your_preference_file_name</string>

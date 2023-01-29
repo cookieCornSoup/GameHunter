@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gamehunter.R
 import com.example.gamehunter.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -28,13 +29,13 @@ class SignUpActivity : AppCompatActivity() {
                             if (task.isSuccessful) {
                                 Toast.makeText(
                                     this,
-                                    "회원가입이 성공적으로 진행되었습니다. 이제 로그인이 가능합니다.",
+                                    getString(R.string.signUp_successText),
                                     Toast.LENGTH_SHORT
                                 ).show()
                             } else {
                                 Toast.makeText(
                                     this,
-                                    "회원 가입 실패 : ${task.exception?.message}",
+                                    getString(R.string.signUp_failTextReason) + "${task.exception?.message}",
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }
@@ -42,7 +43,7 @@ class SignUpActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         this,
-                        "비밀번호가 확인과 일치하지 않습니다.",
+                        getString(R.string.signUp_failTextPasswordConfirm),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
