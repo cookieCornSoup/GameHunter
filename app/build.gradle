@@ -45,6 +45,7 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
     //material
     implementation("androidx.compose.material3:material3:1.0.1")

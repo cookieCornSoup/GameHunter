@@ -20,10 +20,6 @@ class MainActivity : AppCompatActivity() {
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
 
-        binding.recycleView.setHasFixedSize(true)
-        binding.recycleView.layoutManager
-
-
         val database = FirebaseDatabase.getInstance()
 
         val databaseReference = database.getReference("User")

@@ -11,33 +11,28 @@ class LoginViewModel(private val context: Context) : ViewModel() {
 
     private val firebaseAuth = FirebaseAuth.getInstance()
 
-    val email = MutableLiveData<String>()
-    val password = MutableLiveData<String>()
     val error = MutableLiveData<String>()
-    val success = MutableLiveData<Boolean>()
 
-
-    fun login() {
-        firebaseAuth.signInWithEmailAndPassword(email.value!!, password.value!!)
+    fun checkEmailExist(email: String, callback: (exist: Boolean) -> Unit) {
+        firebaseAuth.fetchSignInMethodsForEmail(email)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(context, MainActivity::class.java)
-                    context.startActivity(intent)
+                    val signInMethods = task.result?.signInMethods
+                    callback(signInMethods?.contains("password") == true)
                 } else {
                     error.value = task.exception?.message
                 }
             }
     }
 
-
-    fun signUp() {
-        firebaseAuth.createUserWithEmailAndPassword(email.value!!, password.value!!)
+    fun checkEmailPassword(email: String, password: String, callback: (success: Boolean) -> Unit) {
+        firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    success.value = true
-
+                    callback(true)
                 } else {
                     error.value = task.exception?.message
+                    callback(false)
                 }
             }
     }
